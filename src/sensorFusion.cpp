@@ -42,7 +42,7 @@ void SensorFusion::Process(MeasurementPackage measurement_pack) {
             // 如果第一帧数据是毫米波雷达，可以通过三角函数算出x-y坐标系下的位置和速度
             double rho = measurement_pack.raw_measurements_[0];
             double phi = measurement_pack.raw_measurements_[1];
-            double rho_dot = measurement_pack.raw_measurements_[0];
+            double rho_dot = measurement_pack.raw_measurements_[2];
             double position_x = rho * cos(phi);
             if (position_x < 0.0001){
                 position_x = 0.0001;
