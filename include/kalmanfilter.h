@@ -6,6 +6,7 @@
 #define KALMANFILTER_H
 
 #include <Eigen/Dense>
+#include <cmath>
 
 class KalmanFilter{
 public:
@@ -33,6 +34,32 @@ public:
     void EKFUpdate(Eigen::VectorXd z);
 
     Eigen::VectorXd GetX();
+
+private:
+
+    void CalculateJacobianMatrix();
+
+    // flag of initialization
+    bool is_initialized_;
+
+    // state vector
+    Eigen::VectorXd x_;
+
+    // state covariance matrix
+    Eigen::MatrixXd P_;
+
+    // state transistion matrix
+    Eigen::MatrixXd F_;
+
+    // process covariance matrix
+    Eigen::MatrixXd Q_;
+
+    // measurement matrix
+    Eigen::MatrixXd H_;
+
+    // measurement covariance matrix
+    Eigen::MatrixXd R_;
+
 };
 
 #endif //KALMANFILTER_H
