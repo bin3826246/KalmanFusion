@@ -11,7 +11,6 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
 set(CMAKE_BUILD_TYPE DEBUG)
 #set(CMAKE_BUILD_TYPE RELEASE)
 
-#include_directories(src)
 include_directories(include)
 include_directories(3rdparty)
 
