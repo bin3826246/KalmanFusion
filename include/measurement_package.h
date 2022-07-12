@@ -5,6 +5,7 @@
 #ifndef MEASUREMENT_PACKAGE_H
 #define MEASUREMENT_PACKAGE_H
 
+#include <vector>
 #include "Eigen/Dense"
 
 class MeasurementPackage {
@@ -17,6 +18,8 @@ public:
     } sensor_type_;
 
     Eigen::VectorXd raw_measurements_;
+
+    std::vector<MeasurementPackage> meas_pack_list; // List of measurement package
 };
 
 #endif //MEASUREMENT_PACKAGE_H
