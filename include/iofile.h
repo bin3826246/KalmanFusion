@@ -93,7 +93,7 @@ inline bool write_output_data(const std::string& output_file_name, std::vector<E
         return false;
     }
 
-    for (int i = 0; i < x_out_list.size(); i++){
+    for (size_t i = 0; i < x_out_list.size(); i++){
 
         output_file << x_out_list[i](0) << '\t';
         output_file << x_out_list[i](1) << '\t';

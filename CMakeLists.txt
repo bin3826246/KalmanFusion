@@ -2,7 +2,7 @@
 project(KalmanFusion)
 
 # 设置所需要的CMake的最低版本号
-cmake_minimum_required (VERSION 2.8)
+cmake_minimum_required (VERSION 3.5)
 
 # 使用C++11
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
@@ -12,7 +12,7 @@ set(CMAKE_BUILD_TYPE DEBUG)
 #set(CMAKE_BUILD_TYPE RELEASE)
 
 include_directories(include)
-include_directories(3rdparty)
+include_directories(3rdparty/Eigen)
 
 # 找到src目录及其子目录下的所有c文件和h文件
 file(GLOB_RECURSE PROJECT_SOURCES "src/*.cpp" "src/*.c" "src/*.cc")

@@ -6,7 +6,7 @@
 #define GROUND_TRUTH_PACKAGE_H
 
 #include <vector>
-#include "Eigen/Dense"
+#include <Eigen/Dense>
 
 class GroundTruthPackage {
 public:

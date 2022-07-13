@@ -32,7 +32,7 @@ int main(){
     std::vector<Eigen::Vector4d> output_data;
 
     int count = 0;
-    for (int i = 0; i < measurement_data.meas_pack_list.size(); i++) {
+    for (size_t i = 0; i < measurement_data.meas_pack_list.size(); i++) {
 //        if (count > 5) break;
         count++;
         fuser.Process(measurement_data.meas_pack_list[i]);
