@@ -45,6 +45,7 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+*.cbp
 
 ### OSX ###
 *.DS_Store
