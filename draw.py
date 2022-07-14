@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-out_file = open('output/out-2.txt', 'r')
-gt_file = open('output/gt-2.txt', 'r')
+out_file = open('output/out-1.txt', 'r')
+gt_file = open('output/gt-1.txt', 'r')
 
 out_x = np.array([])
 out_y = np.array([])
