@@ -60,6 +60,10 @@ Where:
 (gt_x gt_y gt_vx gt_vy) - the real ground truth state of the system
 ```
 ## Plot
+- out-1.txt
+
+![Fig1](./plot/Figure_1.png)
+
 - out-2.txt:
 
-![Fig2](plot/Figure_2.png)
+![Fig2](./plot/Figure_2.png)
