@@ -11,9 +11,9 @@
 
 int main(){
 
-    std::string input_file_name = "../data/data-2.txt"; //sample-laser-radar-measurement-data-2.txt // data-1.txt
-    std::string output_file_name = "../output/out-2.txt";
-    std::string gt_file_name = "../output/gt-2.txt";
+    std::string input_file_name = "../data/data-1.txt"; //sample-laser-radar-measurement-data-2.txt // data-1.txt
+    std::string output_file_name = "../output/out-1.txt";
+    std::string gt_file_name = "../output/gt-1.txt";
 
     // measurement_data：毫米波雷达/激光雷达实际测得的数据。数据包含测量值和时间戳，即融合算法的输入。
     // gt_data：每次测量时，障碍物位置的真值。对比融合算法输出和真值的差别，用于评估融合算法结果的好坏。
